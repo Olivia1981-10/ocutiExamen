@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ocutiExamen.Views.Login"
+             Title="Login">
+    <VerticalStackLayout
+        Padding="20"
+        Spacing="10">
+        
+        <Label 
+            Text="GIMSOCIO"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+
+        <Image Source="gimnasio.jpg"
+               WidthRequest="250"/>
+
+        <Grid ColumnSpacing="15">
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+
+            <Label Text="Usuario"
+                   FontSize="18"
+                   Grid.Row="0"
+                   Grid.Column="0"/>
+
+            <Entry x:Name="txtUsuario"
+                   Placeholder="Ingrese el usuario"
+                   Grid.Row="0"
+                   Grid.Column="1"/>
+
+            <Label Text="Contraseña"
+                   FontSize="18"
+                   Grid.Row="1"
+                   Grid.Column="0"/>
+
+            <Entry x:Name="txtcontrasena"
+                   Placeholder="Ingrese la contraseña"
+                   IsPassword="True"
+                   Grid.Row="1"
+                   Grid.Column="1"/>
+
+            <Button x:Name="btnIniciarSesion"
+                    Text="Iniciar Sesión"
+                    Clicked="btnIniciarSesion_Clicked"
+                    Grid.Row="2"
+                    Grid.Column="0"/>
+            
+            <Button x:Name="btnAcercaDe"
+                    Text="Acerca de"
+                    Clicked="btnAcercaDe_Clicked"
+                    Grid.Row="2"
+                    Grid.Column="1"/>
+
+
+
+        </Grid>
+        
+    </VerticalStackLayout>
+</ContentPage>
